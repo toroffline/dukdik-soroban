@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ]
 
+# GRANT WRITE PERMISSIONS TO GITHUB ACTIONS BOT
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
